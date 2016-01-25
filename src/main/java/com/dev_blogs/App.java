@@ -5,12 +5,7 @@ import org.apache.log4j.Logger;
 public class App {
     final static Logger logger = Logger.getLogger(App.class);
  
-    public static void main(String[] args) {
-        App app = new App();
-        app.test();
-    }
- 
-    public void test() {
+    public void logMessages() {
         logger.debug("debug"); // all
         logger.info("info"); // except debug
         logger.warn("warn"); // except debug and info
